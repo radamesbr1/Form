@@ -9,20 +9,23 @@ and open the template in the editor.
         <title>Formulário</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="Validador.js"></script>
     </head>
     <body>
-        <form>
+        
+        <form name="Cadastro" action="html_form_action.asp" method="get">
             <strong>Cadastro de usuário</strong><br/><br/>
             
-            Nome:<input type="text"> <br/><br/>
-            RA:<input type="number"> <br/><br/>
-            Idade:<input type="number"> <br/><br/>
+            Nome:<input type="text" name="nome"> <br/><br/>
+            RA:<input type="number" name="ra"> <br/><br/>
+            Idade:<input type="number" name="idade"> <br/><br/>
             Sexo:<input type="radio" name="sexo" value="Masculino" />Masculino 
             <input type="radio" name="sexo" value="Feminino" />Feminino <br/><br/>
-            Endereço: <input type="text"><br/><br/>
-            Telefone: <input type="tel"><br/><br/>
-             Email: <input type="tel"><br/><br/>
+            Endereço: <input type="text" name="end"><br/><br/>
+            Telefone: <input type="tel" name="tel"><br/><br/>
+             Email: <input type="email" name="email"><br/><br/>
             
+             <input	type="submit" value="Enviar" onclick="PegarDados()"	/>
             
             
         </form>

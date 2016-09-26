@@ -14,9 +14,9 @@ var teste = new Pessoa(nome, ra , sexo ,idade, endereco , telefone ,email)
 function PegarDados(){
     
   
-  //nome= document.forms["Cadastro"]["nome"].value;
+  nome= document.forms["Cadastro"]["nome"].value;
   //ra= document.forms["Cadastro"]["ra"].value;
-  sexo= document.forms["Cadastro"]["sexo"].value;
+  //sexo= document.forms["Cadastro"]["sexo"].value;
   //idade= document.forms["Cadastro"]["idade"].value;
   //endereco= document.forms["Cadastro"]["endereco"].value;
   //telefone= document.forms["Cadastro"]["nome"].value;
@@ -27,7 +27,7 @@ function PegarDados(){
 };
 
 function Alerta(){
-    alert(sexo);  
+    alert(nome);  
 };
 
 function salvaUsuário(){

@@ -14,15 +14,22 @@ var teste = new Pessoa(nome, ra , sexo ,idade, endereco , telefone ,email)
 function PegarDados(){
     
   
-  nome= document.getElementsByName(nome);
-  ra= document.getElementsByName(ra);
-  sexo= document.getElementsByName(sexo);
-  idade= document.getElementsByName(idade);
-  endereco= document.getElementsByName(endereco);
-  telefone= document.getElementsByName(telefone);
-  email=document.getElementsByName(email);
+  //nome= document.forms["Cadastro"]["nome"].value;
+  //ra= document.forms["Cadastro"]["ra"].value;
+  sexo= document.forms["Cadastro"]["sexo"].value;
+  //idade= document.forms["Cadastro"]["idade"].value;
+  //endereco= document.forms["Cadastro"]["endereco"].value;
+  //telefone= document.forms["Cadastro"]["nome"].value;
+  //email= document.forms["Cadastro"]["nome"].value;
+  
+  
+  
 };
 
 function Alerta(){
-    
+    alert(sexo);  
 };
+
+function salvaUsuário(){
+    
+}

@@ -13,7 +13,7 @@ and open the template in the editor.
     </head>
     <body>
         
-        <form name="Cadastro" action="html_form_action.asp" method="get">
+        <form name="Cadastro"  method="get">
             <strong>Cadastro de usuário</strong><br/><br/>
             
             Nome:<input type="text" name="nome"> <br/><br/>
@@ -25,9 +25,11 @@ and open the template in the editor.
             Telefone: <input type="tel" name="tel"><br/><br/>
              Email: <input type="email" name="email"><br/><br/>
             
-             <input	type="submit" value="Enviar" onclick="salvaAluno(), mostrarPessoa()"/>
-            
+             <input	type="button" value="Enviar" onclick="salvaAluno()"/>
+             <input type="button" onclick="mostrarPessoa();" value="Mostra"/>
+             
             
         </form>
+        <div id="mostra"></div>
     </body>
 </html>

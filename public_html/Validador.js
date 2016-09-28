@@ -1,18 +1,8 @@
 
 var vetAluno = [];
 
-var Pessoa = function(nome, ra , sexo ,idade, endereco , telefone ,email ) {
-     this.nomejs =  nome;
-     this.rajs=ra;
-     this.sexojs=sexo;
-     this.idadejs=idade;
-     this.enderecojs= endereco;
-     this.telefonejs=telefone;
-     this.emailjs=email;
-     
-};
 
-var pessoa = new Pessoa(nome, ra , sexo ,idade, endereco , telefone ,email);
+//var pessoa = new Pessoa(nome, ra , sexo ,idade, endereco , telefone ,email);
 
 function PegarDados(){
     
@@ -35,7 +25,7 @@ function salvaAluno() {
     
     var pessoa = PegarDados();
         vetAluno.push(pessoa.nome,pessoa.ra,pessoa.sexo,pessoa.idade,pessoa.endereco,pessoa.telefone,pessoa.email);
-        //alert(vetAluno[0] + vetAluno[4]);
+        alert("Cadastrado com sucesso");
         //);
     
   
@@ -52,7 +42,19 @@ function mostrarPessoa(){
           + "Email : " + pessoa.email);"<
           ---------------------------- */
     alert(vetAluno.length);
-    for(i=0;i<=vetAluno.length;i+7)
-    document.getElementById("mostra").valueOf() = "Nome: " + vetAluno[i];
-
+        var i=0;
+        document.getElementById("mostra").innerHTML = "";
+        while(i<vetAluno.length){
+        document.getElementById("mostra").innerHTML += "<br>" 
+                  +"Nome: " + vetAluno[i]+"<br>"
+                  +"RA: " + vetAluno[i+1]+"<br>"           
+                  + "Sexo: " + vetAluno[i+2]+"<br>"  
+                  + "Idade: " + vetAluno[i+3]+"<br>"
+                  + "Endereço : " + vetAluno[i+4] +"<br>"
+                  + "Telefone : " + vetAluno[i+5] +"<br>"
+                  + "Email : " + vetAluno[i+6];+"<br>"
+                  
+        
+        i=i+7;
+        }
 }

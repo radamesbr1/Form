@@ -20,12 +20,12 @@ function PegarDados(){
   
   pessoa = {
   nome: document.forms["Cadastro"]["nome"].value,
-  //ra: document.forms["Cadastro"]["ra"].value,
-  //sexo: document.forms["Cadastro"]["sexo"].value,
-  //idade: document.forms["Cadastro"]["idade"].value,
-  //endereco: document.forms["Cadastro"]["endereco"].value,
-  //telefone: document.forms["Cadastro"]["nome"].value,
-  //email: document.forms["Cadastro"]["nome"].value
+  ra: document.forms["Cadastro"]["ra"].value,
+  sexo: document.forms["Cadastro"]["sexo"].value,
+  idade: document.forms["Cadastro"]["idade"].value,
+  endereco: document.forms["Cadastro"]["end"].value,
+  telefone: document.forms["Cadastro"]["tel"].value,
+  email: document.forms["Cadastro"]["email"].value
   };
   
     return pessoa;
@@ -33,20 +33,22 @@ function PegarDados(){
 function salvaAluno() {
   
     
-    var pessoa = PegarDados();
-    vetAluno.push(pessoa);
+    // pessoa = PegarDados();
+    vetAluno.push(PegarDados());
+    
   
     document.getElementById("Cadastro");
 }
 
 function mostrarPessoa(){
-    alert( "Nome: " + pessoa.nome );
-           /*"RA: " + pessoa.ra + "<br/>"
-          + "Sexo: " + pessoa.sexo + "<br/>"
-          + "Idade: " + pessoa.idade + "<br/>"
-          + "Endereço : " + pessoa.endereco + "<br/>"
-          + "Telefone : " + pessoa.telefone + "<br/>" 
-          + "Email : " + pessoa.email + "<br/>" +
-          "---------------------------- <br/>*/
+    alert( "Nome: " + pessoa.nome 
+           +"RA: " + pessoa.ra           
+          + "Sexo: " + pessoa.sexo  
+          + "Idade: " + pessoa.idade
+          + "Endereço : " + pessoa.endereco 
+          + "Telefone : " + pessoa.telefone 
+          + "Email : " + pessoa.email);/*"<
+          ---------------------------- */
+   
 
 }
